@@ -6,6 +6,7 @@
   <title>Ótica Bela Visão</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos/styles.css">
+ 
   
 </head>
 <body>
@@ -27,16 +28,29 @@
       <a href="#contato">Contato</a>
     </nav>
   </header>
-
-  <div class="hero">
-    <!-- <img src="img/banner001.jpg" alt=""> -->
-     <h1>Óculos com estilo e qualidade em Curitiba e Região Metropolitana</h1>
+  <section class="hero-carousel">
+  <div class="slide alinhamento-direita" style="background-image: url('img/banner002.jpg');">
+    <h1 >Óculos com estilo e qualidade em <br>Curitiba e Região Metropolitana</h1>
   </div>
+  <div class="slide alinhamento-meio-esquerda" style="background-image: url('img/banner001.jpg');">
+    <h1 >Promoções imperdíveis<br> para toda a família</h1>
+  </div>
+  <div class="slide alinhamento-esquerda" style="background-image: url('img/banner003.jpg');">
+    <h1 >Atendimento personalizado<br> e laboratório próprio</h1>
+  </div>
+</section>
+  
 
   <section class="section" id="sobre">
   <h2>Sobre Nós</h2>
   <p class="texto-sobre">
-    Somos especialistas em óculos de grau, óculos de sol e lentes de contato. Atendemos Curitiba e região com qualidade, marcas reconhecidas e preços acessíveis para as classes B e C. Oferecemos atendimento personalizado e laboratório próprio para maior agilidade.
+    A Bella Visão é muito mais que uma ótica — é uma rede com 10 lojas espalhadas por Curitiba e região, criada para transformar a forma como você cuida da sua visão.
+
+Nossa missão é unir qualidade, estilo e preço justo em um só lugar. Trabalhamos com as melhores marcas do mercado, oferecendo óculos de grau, óculos de sol e lentes de contato com variedade, bom gosto e aquele atendimento personalizado que faz toda a diferença.
+
+Com laboratório próprio, entregamos seus óculos com mais agilidade, precisão e segurança. Cada detalhe é pensado para proporcionar conforto visual e valorizar seu estilo de vida.
+
+Na Bella Visão, você enxerga mais, com confiança, qualidade e um atendimento que conquista.
   </p>
 
   <div class="sobre-imagens">
@@ -64,17 +78,95 @@
     </div>
   </section>
 
+  <section class="carrossel-marcas">
+    <div class="carrossel-imagens">
+      <img src="/img/marcas/armaniex.png" alt="Armaniex">
+      <img src="/img/marcas/polohalf.png" alt="Polohalf">
+      <img src="img/marcas/ralph.png" alt="Ralph">
+      <img src="img/marcas/raybam.png" alt="Raybam">
+      <img src="img/marcas/varilux.png" alt="Varilux">
+      <img src="img/marcas/vogue.png" alt="Vogue">
+    </div>
+  </section>
+
   <section class="section" id="galeria">
-    <h2>Galeria de Produtos</h2>
-    <div class="banner">
+  <h2>Galeria de Produtos</h2>
+
+  <div class="banner-container">
+    <button class="nav-btn left" onclick="moverSlide(-1)">&#10094;</button>
+
+<div class="carousel-viewport">
+    <div class="banner" id="carrossel">
       <img src="img/oc001.PNG" alt="Óculos 1">
       <img src="img/oc002.PNG" alt="Óculos 2">
       <img src="img/oc003.PNG" alt="Óculos 3">
       <img src="img/oc004.PNG" alt="Óculos 4">
       <img src="img/oc004.PNG" alt="Óculos 5">
       <img src="img/oc005.PNG" alt="Óculos 6">
-      <img src="img/oc006.PNG" alt="Óculos 7">
     </div>
+    </div>
+    <button class="nav-btn right" onclick="moverSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="nossas-lojas">
+    <h2>Óticas Bella Visão</h2>
+    <p>A Ótica Bella Visão está presente em Curitiba e Região Metropolitana com 8 unidades estrategicamente localizadas para oferecer mais comodidade, atendimento personalizado e os melhores produtos em óculos de grau, solares e lentes de contato. Nossa loja principal é referência em qualidade e atendimento de excelência, sendo apoiada por outras 7 unidades modernas, prontas para atender você com agilidade e confiança.</p>
+
+    <div class="loja-principal">
+      <img src="img/lojas/riachuelo.webp" alt="Loja Matriz">
+      <p class="endereco">Rua das Óticas, 123 - Curitiba</p>
+    </div>
+
+    <div class="grid-lojas">
+      <div class="loja">
+      <img src="img/lojas/drmuricy.webp" alt="Loja Bella Visão 2">
+      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+      </div>
+
+      
+      <div class="loja">
+      <img src="img/lojas/hauer.webp" alt="Loja Bella Visão 3">
+      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+      </div>
+
+      
+      <div class="loja">
+      <img src="img/lojas/marechal.webp" alt="Loja Bella Visão 4">
+      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+      </div>
+
+      
+      <div class="loja">
+      <img src="img/lojas/riachuelo.webp" alt="Loja Bella Visão 5">
+      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+      </div>
+
+     
+      <div class="loja">
+      <img src="img/lojas/senador.webp" alt="Loja Bella Visão 6">
+      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+      </div>
+
+      
+      <div class="loja">
+      <img src="img/lojas/voluntarios.webp" alt="Loja Bella Visão 7">
+      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+      </div>
+
+      
+      <div class="loja">
+      <img src="img/lojas/drmuricy.webp" alt="Loja Bella Visão 8">
+       <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+      </div>
+
+      
+      <div class="loja">
+      <img src="img/lojas/hauer.webp" alt="Loja Bella Visão 9">
+      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+      </div>
+    </div>
+
   </section>
 
   <section class="section" id="agendamento">
@@ -125,6 +217,43 @@
     toggleBtn.classList.toggle('active');
     menu.classList.toggle('show');
   });
+
+   let currentSlide = 0;
+  const heroSlides = document.querySelectorAll('.hero-carousel .slide');
+
+  function showSlide(index) {
+    heroSlides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+    showSlide(currentSlide);
+  }, 5000); 
+
+  const carrossel = document.getElementById('carrossel');
+  const totalSlides = carrossel.children.length;
+  let index = 0;
+
+  function moverSlide(direcao) {
+    index += direcao;
+    if (index < 0) index = totalSlides - 1;
+    if (index >= totalSlides) index = 0;
+    atualizarSlide();
+  }
+
+  function atualizarSlide() {
+    carrossel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function atualizarSlide() {
+    carrossel.style.transform = `translateX(-${galeriaIndex * 100}%)`;
+  }
+
+  setInterval(() => {
+    moverSlide(1);
+  }, 5000);
   </script>
 </body>
 </html>
