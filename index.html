@@ -12,8 +12,10 @@
   </head>
   <body>
     <header class="site-header" role="banner">
-      <div class="logo" aria-label="Logotipo da Ótica Bella Visão">
-        <h1 class="titulo-principal">Ótica Bella Visão</h1>
+      <div class="logo">
+        <a href="/">
+          <img src="img/logopng.png" alt="Ótica Bella Visão" class="logo" />
+        </a>
       </div>
 
       <!-- Botão do menu hambúrguer para dispositivos móveis -->
@@ -29,9 +31,8 @@
         <span></span>
       </button>
 
-      <!-- Menu de navegação principal -->
       <nav class="menu" id="menu" role="navigation" aria-label="Menu principal">
-        <ul>
+        <ul class="menu-itens">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#produtos">Produtos</a></li>
           <li><a href="#nossa-marca">Nossa Marca</a></li>
@@ -252,9 +253,9 @@
         <!-- <h2 class="titulo-verao">Tendências do Verão</h2> -->
         <div class="video-container">
           <video id="video-loja" autoplay muted loop playsinline>
-      <source src="img/videos/v-transp-oculos.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo em HTML5.
-    </video>
+            <source src="img/videos/v-transp-oculos.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo em HTML5.
+          </video>
         </div>
       </section>
 
@@ -325,6 +326,5 @@
     </a>
 
     <script src="js/scripts.js"></script>
-      
   </body>
 </html>
