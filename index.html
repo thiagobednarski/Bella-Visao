@@ -9,16 +9,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="estilos/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="site-header" role="banner">
       <div class="logo">
-        <a href="/">
+        <a href="index.html">
           <img src="img/logopng.png" alt="Ótica Bella Visão" class="logo" />
         </a>
       </div>
 
-      <!-- Botão do menu hambúrguer para dispositivos móveis -->
       <button
         class="menu-toggle"
         id="menu-toggle"
@@ -45,9 +48,40 @@
 
     <section id="inicio">
       <div class="carousel">
-        <img src="img/banner002.jpg" class="slide active" alt="Banner 1" />
-        <img src="img/banner001.jpg" class="slide" alt="Banner 2" />
-        <img src="img/banner003.jpg" class="slide" alt="Banner 3" />
+        <div class="slide active">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="img/banner/banner001-768.png"
+            />
+            <img
+              class="imgbn01"
+              src="img/banner/banner001-1920.png"
+              alt="Banner 1"
+            />
+          </picture>
+        </div>
+
+        <div class="slide">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="img/banner/banner002-768.png"
+            />
+            <img src="img/banner/banner002-1920.png" alt="Banner 2" />
+          </picture>
+        </div>
+
+        <div class="slide">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="img/banner/banner003-768.png"
+            />
+            <img src="img/banner/banner003-1920.png" alt="Banner 3" />
+          </picture>
+        </div>
+
         <div class="hero-content">
           <h1>Bem-vindo à Ótica Bella Visão</h1>
           <p>Seu olhar merece o melhor!</p>
@@ -261,8 +295,10 @@
 
       <section class="section" id="agendamento" tabindex="-1">
         <h2>Agende seu Atendimento</h2>
+
         <form
-          action="https://formspree.io/f/mqkwlbro"
+          id="form-agendamento"
+          action="https://formsubmit.co/ajax/bellavisaomatriz@gmail.com"
           method="POST"
           aria-label="Formulário de agendamento"
         >
@@ -294,29 +330,128 @@
             rows="4"
           ></textarea>
           <button type="submit">Enviar</button>
+
+          <input type="hidden" name="_captcha" value="false" />
         </form>
+
+        <div
+          id="mensagem-confirmacao"
+          style="display: none; text-align: center; margin-top: 20px"
+        >
+          <div class="oculos-animado">
+            <svg
+              width="80"
+              height="40"
+              viewBox="0 0 100 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="25"
+                cy="25"
+                r="15"
+                stroke="#FFA500"
+                stroke-width="5"
+                fill="none"
+              />
+              <circle
+                cx="75"
+                cy="25"
+                r="15"
+                stroke="#FFA500"
+                stroke-width="5"
+                fill="none"
+              />
+              <line
+                x1="40"
+                y1="25"
+                x2="60"
+                y2="25"
+                stroke="#FFA500"
+                stroke-width="5"
+              />
+              <line
+                x1="10"
+                y1="25"
+                x2="0"
+                y2="20"
+                stroke="#FFA500"
+                stroke-width="3"
+              />
+              <line
+                x1="90"
+                y1="25"
+                x2="100"
+                y2="20"
+                stroke="#FFA500"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+          <p
+            style="
+              color: #ffa500;
+              font-weight: bold;
+              font-size: 1.1rem;
+              margin-top: 10px;
+            "
+          >
+            ✅ Sua mensagem foi enviada com sucesso!
+          </p>
+        </div>
       </section>
 
       <section class="section" id="contato" tabindex="-1">
         <h2>Fale Conosco</h2>
         <address style="text-align: center; font-size: 1.1em">
-          📍 Rua Exemplo, 123 - Curitiba/PR<br />
+          📍 Rua Riachuelo, 90 - Centro - Curitiba<br />
           📞 <a href="tel:+5541999999999">(41) 99999-9999</a><br />
           ✉
           <a href="mailto:contato@oticabelavisao.com.br"
-            >contato@oticabelavisao.com.br</a
+            >contato@oticabellavisao.com.br</a
           >
         </address>
       </section>
+      <section class="redes-sociais">
+        <a
+          href="https://www.youtube.com/@BellaVis%C3%A3o-v5l"
+          target="_blank"
+          aria-label="YouTube"
+          class="yt"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/bellavisaooticas"
+          target="_blank"
+          aria-label="Instagram"
+          class="ig"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/OticasBellaVisao"
+          target="_blank"
+          aria-label="Facebook"
+          class="fb"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+      </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Ótica Bella Visão | Todos os direitos reservados</p>
+    <footer class="footer-site">
+      <p>&copy; 2025 Ótica Bella Visão® – Todos os direitos reservados.</p>
+      <p>
+        Desenvolvido por
+        <a href="https://www.instagram.com/thiagobednarski" target="_blank"
+          >Web Bed</a
+        >
+      </p>
     </footer>
 
-    <!-- Botão WhatsApp flutuante -->
     <a
-      href="https://wa.me/5541999999999"
+      href="https://wa.me/5541998507434"
       class="whatsapp"
       target="_blank"
       rel="noopener noreferrer"
