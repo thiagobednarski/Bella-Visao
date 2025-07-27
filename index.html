@@ -1,259 +1,329 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ótica Bela Visão</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos/styles.css">
- 
-  
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-flex">
-    <a href="index.html" class="logo">
-      <img src="img/logovrm.jpeg" alt="Logo Ótica Bella Visão" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ótica Bella Visão</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/estilos/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="logo" aria-label="Logotipo da Ótica Bella Visão">
+        <h1>Ótica Bella Visão</h1>
+      </div>
+
+      <!-- Botão do menu hambúrguer para dispositivos móveis -->
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menu"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Menu de navegação principal -->
+      <nav class="menu" id="menu" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#nossa-marca">Nossa Marca</a></li>
+          <li><a href="#lojasbellavisao">Lojas</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio">
+      <div class="carousel">
+        <img src="img/banner002.jpg" class="slide active" alt="Banner 1" />
+        <img src="img/banner001.jpg" class="slide" alt="Banner 2" />
+        <img src="img/banner003.jpg" class="slide" alt="Banner 3" />
+        <div class="hero-content">
+          <h1>Bem-vindo à Ótica Bella Visão</h1>
+          <p>Seu olhar merece o melhor!</p>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="section" id="sobre" tabindex="-1">
+        <h2>Sobre Nós</h2>
+        <p class="texto-sobre">
+          A Bella Visão é muito mais que uma ótica — é uma rede com 10 lojas
+          espalhadas por Curitiba e região, criada para transformar a forma como
+          você cuida da sua visão. Nossa missão é unir qualidade, estilo e preço
+          justo em um só lugar. Trabalhamos com as melhores marcas do mercado,
+          oferecendo óculos de grau, óculos de sol e lentes de contato com
+          variedade, bom gosto e aquele atendimento personalizado que faz toda a
+          diferença. Com laboratório próprio, entregamos seus óculos com mais
+          agilidade, precisão e segurança. Cada detalhe é pensado para
+          proporcionar conforto visual e valorizar seu estilo de vida. Na Bella
+          Visão, você enxerga mais, com confiança, qualidade e um atendimento
+          que conquista.
+        </p>
+
+        <div class="sobre-imagens">
+          <img src="img/img002.PNG" alt="Óculos de grau" loading="lazy" />
+          <img src="img/img001.PNG" alt="Óculos de sol" loading="lazy" />
+          <img
+            src="img/img006.PNG"
+            alt="Atendimento personalizado"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="section" id="produtos" tabindex="-1">
+        <h2>Nossos Produtos</h2>
+        <div class="cards">
+          <article class="card" tabindex="0">
+            <h3>Óculos de Grau</h3>
+            <p>Modelos modernos, resistentes e com garantia de qualidade.</p>
+          </article>
+          <article class="card" tabindex="0">
+            <h3>Óculos de Sol</h3>
+            <p>Estilo e proteção UV em um só produto. Para todas as idades.</p>
+          </article>
+          <article class="card" tabindex="0">
+            <h3>Lentes de Contato</h3>
+            <p>
+              Conforto e praticidade no seu dia a dia, com as melhores marcas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="carrossel-marcas" aria-label="Marcas parceiras">
+        <div class="carrossel-imagens">
+          <img
+            src="img/marcas/armaniex.png"
+            alt="Marca Armaniex"
+            loading="lazy"
+          />
+          <img
+            src="img/marcas/polohalf.png"
+            alt="Marca Polohalf"
+            loading="lazy"
+          />
+          <img src="img/marcas/ralph.png" alt="Marca Ralph" loading="lazy" />
+          <img src="img/marcas/raybam.png" alt="Marca Raybam" loading="lazy" />
+          <img
+            src="img/marcas/varilux.png"
+            alt="Marca Varilux"
+            loading="lazy"
+          />
+          <img src="img/marcas/vogue.png" alt="Marca Vogue" loading="lazy" />
+        </div>
+      </section>
+
+      <section class="section" id="nossa-marca" tabindex="-1">
+        <h2>Nossa Marca</h2>
+        <div class="galeria-imagens" aria-label="Galeria de fotos de produtos">
+          <img
+            src="img/oc001.PNG"
+            alt="Óculos modelo 1"
+            class="zoomable"
+            loading="lazy"
+            tabindex="0"
+          />
+          <img
+            src="img/oc002.PNG"
+            alt="Óculos modelo 2"
+            class="zoomable"
+            loading="lazy"
+            tabindex="0"
+          />
+          <img
+            src="img/oc003.PNG"
+            alt="Óculos modelo 3"
+            class="zoomable"
+            loading="lazy"
+            tabindex="0"
+          />
+        </div>
+      </section>
+
+      <section class="nossas-lojas" id="lojasbellavisao" tabindex="-1">
+        <h2>Óticas Bella Visão</h2>
+        <p>
+          A Ótica Bella Visão está presente em Curitiba e Região Metropolitana
+          com 8 unidades estrategicamente localizadas para oferecer mais
+          comodidade, atendimento personalizado e os melhores produtos em óculos
+          de grau, solares e lentes de contato. Nossa loja principal é
+          referência em qualidade e atendimento de excelência, sendo apoiada por
+          outras 8 unidades modernas, prontas para atender você com agilidade e
+          confiança.
+        </p>
+
+        <div class="loja-principal">
+          <img
+            src="img/lojas/riachuelo.webp"
+            alt="Loja Matriz Ótica Bella Visão"
+            loading="lazy"
+          />
+          <p class="endereco">Rua das Óticas, 123 - Curitiba</p>
+        </div>
+
+        <div class="grid-lojas">
+          <div class="loja">
+            <img
+              src="img/lojas/drmuricy.webp"
+              alt="Loja Bella Visão 2"
+              loading="lazy"
+            />
+            <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+          </div>
+
+          <div class="loja">
+            <img
+              src="img/lojas/hauer.webp"
+              alt="Loja Bella Visão 3"
+              loading="lazy"
+            />
+            <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+          </div>
+
+          <div class="loja">
+            <img
+              src="img/lojas/marechal.webp"
+              alt="Loja Bella Visão 4"
+              loading="lazy"
+            />
+            <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+          </div>
+
+          <div class="loja">
+            <img
+              src="img/lojas/riachuelo.webp"
+              alt="Loja Bella Visão 5"
+              loading="lazy"
+            />
+            <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+          </div>
+
+          <div class="loja">
+            <img
+              src="img/lojas/senador.webp"
+              alt="Loja Bella Visão 6"
+              loading="lazy"
+            />
+            <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+          </div>
+
+          <div class="loja">
+            <img
+              src="img/lojas/voluntarios.webp"
+              alt="Loja Bella Visão 7"
+              loading="lazy"
+            />
+            <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+          </div>
+
+          <div class="loja">
+            <img
+              src="img/lojas/drmuricy.webp"
+              alt="Loja Bella Visão 8"
+              loading="lazy"
+            />
+            <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+          </div>
+
+          <div class="loja">
+            <img
+              src="img/lojas/hauer.webp"
+              alt="Loja Bella Visão 9"
+              loading="lazy"
+            />
+            <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="video">
+        <!-- <h2 class="titulo-verao">Tendências do Verão</h2> -->
+        <div class="video-container">
+          <video id="video-loja" autoplay muted loop playsinline>
+      <source src="img/videos/v-transp-oculos.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo em HTML5.
+    </video>
+        </div>
+      </section>
+
+      <section class="section" id="agendamento" tabindex="-1">
+        <h2>Agende seu Atendimento</h2>
+        <form
+          action="https://formspree.io/f/mqkwlbro"
+          method="POST"
+          aria-label="Formulário de agendamento"
+        >
+          <input
+            type="text"
+            name="nome"
+            placeholder="Seu nome"
+            required
+            aria-required="true"
+          />
+          <input
+            type="tel"
+            name="whatsapp"
+            placeholder="WhatsApp"
+            required
+            aria-required="true"
+          />
+          <input type="email" name="email" placeholder="E-mail" />
+          <input type="date" name="data" required aria-required="true" />
+          <select name="tipo" required aria-required="true">
+            <option value="" disabled selected>Tipo de atendimento</option>
+            <option value="grau">Óculos de Grau</option>
+            <option value="sol">Óculos de Sol</option>
+            <option value="lentes">Lentes de Contato</option>
+          </select>
+          <textarea
+            name="mensagem"
+            placeholder="Mensagem (opcional)"
+            rows="4"
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section class="section" id="contato" tabindex="-1">
+        <h2>Fale Conosco</h2>
+        <address style="text-align: center; font-size: 1.1em">
+          📍 Rua Exemplo, 123 - Curitiba/PR<br />
+          📞 <a href="tel:+5541999999999">(41) 99999-9999</a><br />
+          ✉
+          <a href="mailto:contato@oticabelavisao.com.br"
+            >contato@oticabelavisao.com.br</a
+          >
+        </address>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Ótica Bella Visão | Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Botão WhatsApp flutuante -->
+    <a
+      href="https://wa.me/5541999999999"
+      class="whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco no WhatsApp"
+    >
+      <img src="img/imgwhats.png" alt="WhatsApp" />
     </a>
-    <button class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <nav class="menu" id="menu">
-      <a href="#sobre">Sobre</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#agendamento">Agendamento</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-  <section class="hero-carousel">
-  <div class="slide alinhamento-direita" style="background-image: url('img/banner002.jpg');">
-    <h1 >Óculos com estilo e qualidade em <br>Curitiba e Região Metropolitana</h1>
-  </div>
-  <div class="slide alinhamento-meio-esquerda" style="background-image: url('img/banner001.jpg');">
-    <h1 >Promoções imperdíveis<br> para toda a família</h1>
-  </div>
-  <div class="slide alinhamento-esquerda" style="background-image: url('img/banner003.jpg');">
-    <h1 >Atendimento personalizado<br> e laboratório próprio</h1>
-  </div>
-</section>
-  
 
-  <section class="section" id="sobre">
-  <h2>Sobre Nós</h2>
-  <p class="texto-sobre">
-    A Bella Visão é muito mais que uma ótica — é uma rede com 10 lojas espalhadas por Curitiba e região, criada para transformar a forma como você cuida da sua visão.
-
-Nossa missão é unir qualidade, estilo e preço justo em um só lugar. Trabalhamos com as melhores marcas do mercado, oferecendo óculos de grau, óculos de sol e lentes de contato com variedade, bom gosto e aquele atendimento personalizado que faz toda a diferença.
-
-Com laboratório próprio, entregamos seus óculos com mais agilidade, precisão e segurança. Cada detalhe é pensado para proporcionar conforto visual e valorizar seu estilo de vida.
-
-Na Bella Visão, você enxerga mais, com confiança, qualidade e um atendimento que conquista.
-  </p>
-
-  <div class="sobre-imagens">
-    <img src="img/img002.PNG" alt="Óculos de grau">
-    <img src="img/img001.PNG" alt="Óculos de sol">
-    <img src="img/img006.PNG" alt="Atendimento personalizado">
-  </div>
-</section>
-
-  <section class="section" id="produtos">
-    <h2>Nossos Produtos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Óculos de Grau</h3>
-        <p>Modelos modernos, resistentes e com garantia de qualidade.</p>
-      </div>
-      <div class="card">
-        <h3>Óculos de Sol</h3>
-        <p>Estilo e proteção UV em um só produto. Para todas as idades.</p>
-      </div>
-      <div class="card">
-        <h3>Lentes de Contato</h3>
-        <p>Conforto e praticidade no seu dia a dia, com as melhores marcas.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="carrossel-marcas">
-    <div class="carrossel-imagens">
-      <img src="/img/marcas/armaniex.png" alt="Armaniex">
-      <img src="/img/marcas/polohalf.png" alt="Polohalf">
-      <img src="img/marcas/ralph.png" alt="Ralph">
-      <img src="img/marcas/raybam.png" alt="Raybam">
-      <img src="img/marcas/varilux.png" alt="Varilux">
-      <img src="img/marcas/vogue.png" alt="Vogue">
-    </div>
-  </section>
-
-  <section class="section" id="galeria">
-  <h2>Galeria de Produtos</h2>
-
-  <div class="banner-container">
-    <button class="nav-btn left" onclick="moverSlide(-1)">&#10094;</button>
-
-<div class="carousel-viewport">
-    <div class="banner" id="carrossel">
-      <img src="img/oc001.PNG" alt="Óculos 1">
-      <img src="img/oc002.PNG" alt="Óculos 2">
-      <img src="img/oc003.PNG" alt="Óculos 3">
-      <img src="img/oc004.PNG" alt="Óculos 4">
-      <img src="img/oc004.PNG" alt="Óculos 5">
-      <img src="img/oc005.PNG" alt="Óculos 6">
-    </div>
-    </div>
-    <button class="nav-btn right" onclick="moverSlide(1)">&#10095;</button>
-    </div>
-  </section>
-
-  <section class="nossas-lojas">
-    <h2>Óticas Bella Visão</h2>
-    <p>A Ótica Bella Visão está presente em Curitiba e Região Metropolitana com 8 unidades estrategicamente localizadas para oferecer mais comodidade, atendimento personalizado e os melhores produtos em óculos de grau, solares e lentes de contato. Nossa loja principal é referência em qualidade e atendimento de excelência, sendo apoiada por outras 7 unidades modernas, prontas para atender você com agilidade e confiança.</p>
-
-    <div class="loja-principal">
-      <img src="img/lojas/riachuelo.webp" alt="Loja Matriz">
-      <p class="endereco">Rua das Óticas, 123 - Curitiba</p>
-    </div>
-
-    <div class="grid-lojas">
-      <div class="loja">
-      <img src="img/lojas/drmuricy.webp" alt="Loja Bella Visão 2">
-      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
-      </div>
-
-      
-      <div class="loja">
-      <img src="img/lojas/hauer.webp" alt="Loja Bella Visão 3">
-      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
-      </div>
-
-      
-      <div class="loja">
-      <img src="img/lojas/marechal.webp" alt="Loja Bella Visão 4">
-      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
-      </div>
-
-      
-      <div class="loja">
-      <img src="img/lojas/riachuelo.webp" alt="Loja Bella Visão 5">
-      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
-      </div>
-
-     
-      <div class="loja">
-      <img src="img/lojas/senador.webp" alt="Loja Bella Visão 6">
-      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
-      </div>
-
-      
-      <div class="loja">
-      <img src="img/lojas/voluntarios.webp" alt="Loja Bella Visão 7">
-      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
-      </div>
-
-      
-      <div class="loja">
-      <img src="img/lojas/drmuricy.webp" alt="Loja Bella Visão 8">
-       <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
-      </div>
-
-      
-      <div class="loja">
-      <img src="img/lojas/hauer.webp" alt="Loja Bella Visão 9">
-      <p class="endereco">Rua XV Novembro, 123 - Curitiba</p>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="section" id="agendamento">
-    <h2>Agende seu Atendimento</h2>
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="tel" placeholder="WhatsApp" required>
-      <input type="email" placeholder="E-mail">
-      <input type="date" required>
-      <select required>
-        <option value="">Tipo de atendimento</option>
-        <option value="grau">Óculos de Grau</option>
-        <option value="sol">Óculos de Sol</option>
-        <option value="lentes">Lentes de Contato</option>
-      </select>
-      <textarea placeholder="Mensagem (opcional)" rows="4"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <section class="section" id="contato">
-    <h2>Fale Conosco</h2>
-    <p style="text-align:center; font-size: 1.1em;">📍 Rua Exemplo, 123 - Curitiba/PR<br>
-    📞 (41) 99999-9999<br>
-    ✉ contato@oticabelavisao.com.br</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Ótica Bela Visão | Todos os direitos reservados</p>
-  </footer>
-
-  <a href="https://wa.me/5541999999999" class="whatsapp" target="_blank" aria-label="Fale conosco no WhatsApp"> 
-    <img src="img/imgwhats.png" alt="WhatsApp">
-  </a>
-
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    const toggleBtn = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-
-  toggleBtn.addEventListener('click', () => {
-    toggleBtn.classList.toggle('active');
-    menu.classList.toggle('show');
-  });
-
-   let currentSlide = 0;
-  const heroSlides = document.querySelectorAll('.hero-carousel .slide');
-
-  function showSlide(index) {
-    heroSlides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
-    });
-  }
-
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % heroSlides.length;
-    showSlide(currentSlide);
-  }, 5000); 
-
-  const carrossel = document.getElementById('carrossel');
-  const totalSlides = carrossel.children.length;
-  let index = 0;
-
-  function moverSlide(direcao) {
-    index += direcao;
-    if (index < 0) index = totalSlides - 1;
-    if (index >= totalSlides) index = 0;
-    atualizarSlide();
-  }
-
-  function atualizarSlide() {
-    carrossel.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function atualizarSlide() {
-    carrossel.style.transform = `translateX(-${galeriaIndex * 100}%)`;
-  }
-
-  setInterval(() => {
-    moverSlide(1);
-  }, 5000);
-  </script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
