@@ -22,7 +22,7 @@ a {
 
 header {
   display: flex;
-  background: #ff6506;
+  background: #ed1c24;
   height: 60px;
   padding: 10px 20px;
   position: fixed;
@@ -67,7 +67,7 @@ header {
 
 .menu ul li a:hover,
 .menu ul li a.selected {
-  background-color: #00aeb2;
+  background-color: #000000;
   color: white;
 }
 
@@ -282,7 +282,7 @@ button.menu-toggle.active span:nth-child(3) {
 
 .card h3 {
   margin-bottom: 10px;
-  color: #ff6506;
+  color: #ed1c24;
 }
 
 .carrossel-marcas {
@@ -305,13 +305,13 @@ button.menu-toggle.active span:nth-child(3) {
   width: 100%;
   height: 100px;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .carrossel-imagens img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02, 1.01);
 }
 
 .galeria-imagens {
@@ -361,7 +361,7 @@ button.menu-toggle.active span:nth-child(3) {
   align-items: center;
 }
 
-.loja-principal {
+.loja-principal p {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -372,7 +372,7 @@ button.menu-toggle.active span:nth-child(3) {
 
 .loja-principal img {
   max-width: 500px;
-  max-height: 400px;
+  max-height: 375px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -392,8 +392,8 @@ button.menu-toggle.active span:nth-child(3) {
 }
 
 .loja img {
-  width: 100%;
-  height: 180px;
+  width: 275px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -405,14 +405,15 @@ button.menu-toggle.active span:nth-child(3) {
 }
 
 .endereco {
-  margin-top: 8px;
-  font-size: 14px;
+  margin-top: 4px;
+  font-size: 8px;
   color: #444;
-  line-height: 1.4;
+  line-height: 0.5;
 }
 
 .grid-lojas img {
-  height: 200px;
+  max-width: 275px;
+  max-height: 200px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -421,14 +422,7 @@ button.menu-toggle.active span:nth-child(3) {
   transform: scale(1.05);
 }
 
-/* .titulo-verao {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #ff6506;
-  margin-bottom: 0px;
-} */
-
-#video {
+/* #video {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -452,7 +446,7 @@ button.menu-toggle.active span:nth-child(3) {
   transform: translate(-50%, -50%);
   object-fit: cover;
   object-position: center center;
-}
+} */
 
 form {
   max-width: 600px;
@@ -472,7 +466,7 @@ textarea {
 }
 
 button {
-  background-color: #ff6506;
+  background-color: #ed1c24;
   color: white;
   padding: 12px;
   border: none;
@@ -483,7 +477,7 @@ button {
 }
 
 button:hover {
-  background-color: #e65b05;
+  background-color: #000000;
 }
 
 .oculos-animado {
@@ -523,7 +517,7 @@ button:hover {
 }
 
 footer {
-  background-color: #ff6506;
+  background-color: #ed1c24;
   color: #fff;
   padding: 30px 20px;
   text-align: center;
@@ -541,7 +535,7 @@ footer {
 .whatsapp img {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
+  border-radius: 20%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -571,8 +565,6 @@ footer {
     box-shadow: 0 0 20px 10px rgba(37, 211, 102, 0);
   }
 }
-
-
 
 @media (max-width: 768px) {
   .logo {
@@ -604,7 +596,7 @@ footer {
     top: 60px;
     left: 0;
     width: 100%;
-    background: #e65b05;
+    background: #ed1c24;
     z-index: 9999;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
@@ -623,7 +615,7 @@ footer {
 
   .menu ul li a:hover,
   .menu ul li a.selected {
-    background-color: #00aeb2;
+    background-color: #000000;
     color: white;
   }
 
@@ -655,7 +647,7 @@ footer {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .grid-lojas {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -684,14 +676,13 @@ footer {
     max-height: 600px;
     object-fit: cover;
     margin-left: 10px;
-    margin: 0 ;
+    margin: 0;
     display: block;
-  
   }
 
   .imgbn01 {
-        object-position: 10% center;
-  } 
+    object-position: 10% center;
+  }
 
   .hero-content {
     position: absolute;
