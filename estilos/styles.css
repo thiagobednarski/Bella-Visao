@@ -231,11 +231,11 @@ button.menu-toggle.active span:nth-child(3) {
   100% { transform: translateX(-50%); }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .carousel-track img {
     width: 250px;
     height: 80px;
-  }
+  } */
 }
 
 
@@ -630,8 +630,8 @@ footer {
 
   .carousel-track img {
     width: 90vw;     
-    max-width: 250px;
-  }
+    height: auto;    
+    max-width: 250px; 
 
   .slide h2 {
     font-size: 1.5rem;
