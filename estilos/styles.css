@@ -480,11 +480,11 @@ button:hover {
   background-color: #000000;
 }
 
-.oculos-animado {
+/* .oculos-animado {
   animation: flutuar 1.5s ease-out forwards;
   transform: translateY(30px);
   opacity: 0;
-}
+} */
 
 .redes-sociais {
   display: flex;
@@ -541,17 +541,19 @@ footer {
 
 @keyframes flutuar {
   0% {
-    transform: translateY(30px) rotate(-5deg);
+    transform: translateY(30px);
     opacity: 0;
   }
-  50% {
-    transform: translateY(-5px) rotate(5deg);
-    opacity: 0.8;
-  }
   100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px);
     opacity: 1;
   }
+}
+
+.oculos-animado {
+  animation: flutuar 1.5s ease-out forwards;
+  transform: translateY(30px);
+  opacity: 0;
 }
 
 @keyframes pulse {
