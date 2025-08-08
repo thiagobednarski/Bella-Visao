@@ -570,6 +570,11 @@ footer {
   .grid-lojas {
     grid-template-columns: 1fr;
   }
+
+  .nossas-lojas p {
+    font-size: 16px;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 767px) {
@@ -624,8 +629,7 @@ footer {
   }
 
   .carousel-track img {
-    width: 90vw;     /* usa 90% da largura da tela */
-    height: auto;    /* altura automática para manter proporção */
+    width: 90vw;     
     max-width: 250px;
   }
 
@@ -636,7 +640,6 @@ footer {
     .nossas-lojas p {
     font-size: 16px;
     text-align: justify;
-    
   }
 
   .loja img,

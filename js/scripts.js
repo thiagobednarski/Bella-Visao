@@ -51,22 +51,22 @@ form.addEventListener("submit", function (event) {
   console.log("Formulário enviado:", formData);
 });
 
-/* ======== FUNÇÃO GENÉRICA DO CARROSSEL AUTOMÁTICO COM ROLAGEM SUAVE ======== */
+
 function setupCarousel(trackId, speed = 0.5) {
   const track = document.getElementById(trackId);
   if (!track) return;
 
   const imagesHTML = track.innerHTML;
-  track.innerHTML += imagesHTML; // Duplica as imagens para rolagem infinita
+  track.innerHTML += imagesHTML; 
 
   let position = 0;
 
-  // Pega todas as imagens (duplicadas)
+
   const images = track.querySelectorAll("img");
-  // Número original de imagens (antes da duplicação)
+
   const originalCount = images.length / 2;
 
-  // Calcula a largura total (largura + margens) das imagens originais
+
   let totalWidth = 0;
   for (let i = 0; i < originalCount; i++) {
     const img = images[i];
@@ -89,6 +89,6 @@ function setupCarousel(trackId, speed = 0.5) {
   animate();
 }
 
-/* ======== CONFIGURAÇÃO DOS DOIS CARROSSEIS ======== */
-setupCarousel("carousel-track", 0.5);    // Carrossel grande (15 imagens)
-setupCarousel("carousel-track-2", 0.5);  // Carrossel menor (3 imagens)
+
+setupCarousel("carousel-track", 0.5);   
+setupCarousel("carousel-track-2", 0.5); 
