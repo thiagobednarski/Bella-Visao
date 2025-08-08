@@ -301,12 +301,6 @@ button.menu-toggle.active span:nth-child(3) {
   color: #ed1c24;
 }
 
-.carrossel-marcas {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-}
 
 .carrossel-imagens {
   display: grid;
@@ -641,7 +635,8 @@ footer {
 
     .nossas-lojas p {
     font-size: 16px;
-    text-align: center;
+    text-align: justify;
+    
   }
 
   .loja img,
