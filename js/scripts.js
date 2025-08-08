@@ -117,8 +117,8 @@ showSlide(currentSlide);
       mensagem: document.getElementById("mensagem").value,
     };
 
-    const serviceID = "service_9nh4xjp";     // ⬅️ Substitua pelo seu
-    const templateID = "template_4xh5epg";   // ⬅️ Substitua pelo seu
+    const serviceID = "service_9nh4xjp";     
+    const templateID = "template_4xh5epg";   
 
     emailjs.send(serviceID, templateID, formData)
       .then(() => {
