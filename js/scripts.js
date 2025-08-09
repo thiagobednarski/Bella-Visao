@@ -52,36 +52,80 @@ form.addEventListener("submit", function (event) {
 });
 
 
-function setupCarousel(trackId, speed = 0.5) {
+// function setupCarousel(trackId, speed = 0.5) {
+//   const track = document.getElementById(trackId);
+//   if (!track) return;
+
+//   const imagesHTML = track.innerHTML;
+//   track.innerHTML += imagesHTML; 
+
+//   let position = 0;
+
+
+//   const images = track.querySelectorAll("img");
+
+//   const originalCount = images.length / 2;
+
+
+//   let totalWidth = 0;
+//   for (let i = 0; i < originalCount; i++) {
+//     const img = images[i];
+//     const style = getComputedStyle(img);
+//     const width = img.offsetWidth;
+//     const marginLeft = parseFloat(style.marginLeft);
+//     const marginRight = parseFloat(style.marginRight);
+//     totalWidth += width + marginLeft + marginRight;
+//   }
+
+//   function animate() {
+//     position -= speed;
+//     if (Math.abs(position) >= totalWidth) {
+//       position = 0;
+//     }
+//     track.style.transform = `translateX(${position}px)`;
+//     requestAnimationFrame(animate);
+//   }
+
+//   animate();
+// }
+
+
+// setupCarousel("carousel-track", 0.5);   
+// setupCarousel("carousel-track-2", 0.5); 
+
+function setupCarousel(trackId, speed = 0.5, continuousRandom = false) {
   const track = document.getElementById(trackId);
   if (!track) return;
 
-  const imagesHTML = track.innerHTML;
-  track.innerHTML += imagesHTML; 
+  let originalImages = Array.from(track.children);
+
+  function shuffleArray(arr) {
+    return arr.sort(() => Math.random() - 0.5);
+  }
+
+  function buildCarousel() {
+    let shuffled = continuousRandom ? shuffleArray([...originalImages]) : [...originalImages];
+    track.innerHTML = "";
+    shuffled.forEach(img => track.appendChild(img.cloneNode(true)));
+    shuffled.forEach(img => track.appendChild(img.cloneNode(true)));
+  }
+
+  buildCarousel(); // Monta pela primeira vez
 
   let position = 0;
-
-
-  const images = track.querySelectorAll("img");
-
-  const originalCount = images.length / 2;
-
-
-  let totalWidth = 0;
-  for (let i = 0; i < originalCount; i++) {
-    const img = images[i];
-    const style = getComputedStyle(img);
-    const width = img.offsetWidth;
-    const marginLeft = parseFloat(style.marginLeft);
-    const marginRight = parseFloat(style.marginRight);
-    totalWidth += width + marginLeft + marginRight;
-  }
+  let trackWidth = track.scrollWidth / 2;
 
   function animate() {
     position -= speed;
-    if (Math.abs(position) >= totalWidth) {
+
+    if (Math.abs(position) >= trackWidth) {
       position = 0;
+      if (continuousRandom) {
+        buildCarousel();
+        trackWidth = track.scrollWidth / 2;
+      }
     }
+
     track.style.transform = `translateX(${position}px)`;
     requestAnimationFrame(animate);
   }
@@ -89,6 +133,8 @@ function setupCarousel(trackId, speed = 0.5) {
   animate();
 }
 
+/* Primeiro carrossel - sempre aleatório */
+setupCarousel("carousel-track", 0.5, true);
 
-setupCarousel("carousel-track", 0.5);   
-setupCarousel("carousel-track-2", 0.5); 
+/* Segundo carrossel - fixo */
+setupCarousel("carousel-track-2", 0.5, false);
