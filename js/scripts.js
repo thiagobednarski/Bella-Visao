@@ -52,46 +52,6 @@ form.addEventListener("submit", function (event) {
 });
 
 
-// function setupCarousel(trackId, speed = 0.5) {
-//   const track = document.getElementById(trackId);
-//   if (!track) return;
-
-//   const imagesHTML = track.innerHTML;
-//   track.innerHTML += imagesHTML; 
-
-//   let position = 0;
-
-
-//   const images = track.querySelectorAll("img");
-
-//   const originalCount = images.length / 2;
-
-
-//   let totalWidth = 0;
-//   for (let i = 0; i < originalCount; i++) {
-//     const img = images[i];
-//     const style = getComputedStyle(img);
-//     const width = img.offsetWidth;
-//     const marginLeft = parseFloat(style.marginLeft);
-//     const marginRight = parseFloat(style.marginRight);
-//     totalWidth += width + marginLeft + marginRight;
-//   }
-
-//   function animate() {
-//     position -= speed;
-//     if (Math.abs(position) >= totalWidth) {
-//       position = 0;
-//     }
-//     track.style.transform = `translateX(${position}px)`;
-//     requestAnimationFrame(animate);
-//   }
-
-//   animate();
-// }
-
-
-// setupCarousel("carousel-track", 0.5);   
-// setupCarousel("carousel-track-2", 0.5); 
 
 function setupCarousel(trackId, speed = 0.5, continuousRandom = false) {
   const track = document.getElementById(trackId);
@@ -133,8 +93,8 @@ function setupCarousel(trackId, speed = 0.5, continuousRandom = false) {
   animate();
 }
 
-/* Primeiro carrossel - sempre aleatório */
-setupCarousel("carousel-track", 0.5, true);
 
-/* Segundo carrossel - fixo */
-setupCarousel("carousel-track-2", 0.5, false);
+setupCarousel("carousel-track", 1, true);
+
+
+setupCarousel("carousel-track-2", 1, false);
